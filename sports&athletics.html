@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Athletics | SHS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            background-color: var(--primary-blue) !important;
+        }
+    </style>
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: #003262; /* Navy Blue */
+            color: white;
+        }
+
+        header .navbar-brand img {
+            max-height: 50px;
+        }
+
+        .hero-section {
+            background: url('hero_image.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-section .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+        }
+
+        .news-section h2, .teams-section h2, .schedule-section h2, .gallery-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #003262;
+            font-weight: 700;
+        }
+
+        .news-section .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .teams-section .team-card {
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .teams-section .team-card:hover {
+            transform: scale(1.05);
+        }
+
+        .teams-section .team-card img {
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- The navigation section -->
+<section class="header">
+        
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#" style="text-decoration: none; "><img src="seeta/Badge-removebg-preview.png" alt="Badge" style="width: 70px;"><span style="font-size: 25px; color: #fff;">SHS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="about.html">About SHS</a></li>
+                                    <li><a href="administration.html">Administration</a></li>
+                                    <li><a href="mission&vision.html">Mission & Vision</a></li>
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">About SHS</h2>
+                                    <p class="mega-menu-description">
+                                        Seeta High schools' mission is to nurture holistic growth in our students, fostering a deep understanding and love for Christ while providing an exceptional academic foundation. BFC is a vibrant and inclusive community that cultivates a spirit of inquiry, fosters meaningful relationships, and encourages personal and spiritual development. We believe in the unique talents and gifts of each student and strive to create an environment where they can thrive academically, socially, and spiritually.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="apply.html">Apply Now</a></li>
+                                    <li><a href="Admission Process Overview.html">Admission Overview</a></li>
+                                    <li><a href="fees-structure.html">School Fees</a></li>      
+  
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">ADMISSIONS</h2>
+                                    <p class="mega-menu-description">
+                                        Join the Seeta Family! When you take part in on-campus tours, 
+                                        Venture for a Day experiences, and open houses, you will be able 
+                                        to discover what it means to be part of our extraordinary 
+                                        community and how we can assist you as you venture to become 
+                                        the very best version of yourself.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="curriculum.html">Curriculum</a></li>
+                                    <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">ACADEMICS</h2>
+                                    <p class="mega-menu-description">
+                                        Experience excellence in education through our comprehensive 
+                                        academic programs. Our dedicated faculty and innovative curriculum 
+                                        are designed to challenge, inspire, and prepare you for success 
+                                        in your chosen field and beyond.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Student Life
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="sports&athletics.html">Sports & Athletics</a></li>
+                                    <li><a href="student-clubs.html">Clubs & Activities</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">STUDENT LIFE</h2>
+                                    <p class="mega-menu-description">
+                                      Experience vibrant student life at Seeta. Our diverse clubs, exciting events, and supportive community offer opportunities to connect with peers, pursue your passions, and create lasting memories.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="apply.html" class="btn btn-apply">APPLY NOW</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+  <div class="banner-container">
+    <img src="seeta/sports.jpg" alt="Faculty and staff collaborating" class="banner-image">
+    <div class="banner-overlay">
+    <h1 style="font-size: 100px; text-align: left;">Sports & Athletics</h1></div>
+  </div>
+</section>
+    <!-- News Section -->
+    <section class="news-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Recent News & Announcements</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="seeta/football.jpg" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Game</h5>
+                            <p class="card-text">Cheer for our team this Friday at the home stadium.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="seeta/basketball team.jpg" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Victory</h5>
+                            <p class="card-text">Congratulations to our basketball team for an epic win!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="seeta/swimmer.jpg" class="card-img-top" alt="News">
+                        <div class="card-body">
+                            <h5 class="card-title">Swimming Spotlight:</h5>
+                            <p class="card-text">Meet our star  of the swimming tournament.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Teams</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="seeta/basketballteam.jpg" class="card-img-top" alt="Basketball">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Varsity Basketball</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="seeta/football.jpg" class="card-img-top" alt="Soccer">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Soccer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="seeta/swimming team.jpeg" class="card-img-top" alt="Swimming">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Varsity Swimming</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Photo Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="seeta/sports1.webp" class="img-fluid rounded" alt="Gallery Image">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="seeta/sports3.jpg" class="img-fluid rounded" alt="Gallery Image">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="seeta/seeta2.jpg" class="img-fluid rounded" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--Footer section  -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- School Info -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="seeta/Badge-removebg-preview.png" alt="School Logo" class="me-2" width="80">
+            <h5>SHS</h5>
+          </div>
+          <p>Seeta High School is committed to excellence in education, fostering academic achievement, personal growth, and character development in a supportive and innovative learning environment. We prioritize the holistic development of our students, encouraging creativity, critical thinking, and collaboration.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-3">
+          <h5>Contact Information</h5>
+          <div class="divider"></div>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i> P.O BOX 417, Mukono, Uganda<br>
+            <i class="bi bi-telephone-fill"></i> Main: 0392 001786<br>
+            <i class="bi bi-telephone-fill"></i> Mukono: 0392 174870<br>
+            <i class="bi bi-telephone-fill"></i> Green: 0312 515031<br>
+            <i class="bi bi-envelope-fill"></i> info@seetahighschool.ac.ug
+          </p>
+          <h5 class="mt-3">Accredited By</h5>
+          <img src="seeta/education ministry.png" alt="Accreditation Logo" class="accredited">
+          <p>Ministry of Education and Sports</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5>Quick Links</h5>
+          <div class="divider"></div>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none ">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About SHS</a></li>
+            <li><a href="apply.html" class="text-white text-decoration-none">Apply Now</a></li>
+            <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+            <li><a href="contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Latest News -->
+        <div class="col-md-3">
+          <h5>Latest News</h5>
+          <div class="divider"></div>
+          <div class="news-item">
+            <div class="news-image">
+              <img src="seeta/swimming team.jpeg" alt="News Image">
+            </div>
+            <p class="news-date">15 MAR</p>
+            <p class="news-title">School Sports Day</p>
+            <p>Annual sports day scheduled for next month.</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2024 Seeta High School. All rights reserved.
+      </div>
+    </div>
+  </footer>  
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add this JavaScript to handle the hover behavior
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth < 992) {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+            // Prevent the default Bootstrap collapse behavior on hover
+            navbarToggler.addEventListener('mouseenter', function(e) {
+                e.preventDefault();
+                navbarCollapse.classList.add('show');
+            });
+    
+            // Optional: Close menu when mouse leaves the entire navbar area
+            document.querySelector('.navbar').addEventListener('mouseleave', function() {
+                if (window.innerWidth < 992) {
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        }
+    });
+      </script>
+</body>
+
+</html>

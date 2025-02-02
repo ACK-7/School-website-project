@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Seeta High School</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+          background-color: var(--primary-blue) !important;
+      }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1920/600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .campus-card {
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .campus-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-info-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .social-icons a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+         /* Updated staff image styles */
+         .staff-image-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .staff-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .social-icons a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+
+        /* Additional responsive image controls */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Ensure campus card images are controlled */
+        .campus-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- The navigation section -->
+<section class="header">
+        
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#" style="text-decoration: none; "><img src="seeta/Badge-removebg-preview.png" alt="Badge" style="width: 70px;"><span style="font-size: 25px; color: #fff;">SHS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="about.html">About SHS</a></li>
+                                    <li><a href="administration.html">Administration</a></li>
+                                    <li><a href="mission&vision.html">Mission & Vision</a></li>
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">About SHS</h2>
+                                    <p class="mega-menu-description">
+                                        Seeta High schools' mission is to nurture holistic growth in our students, fostering a deep understanding and love for Christ while providing an exceptional academic foundation. BFC is a vibrant and inclusive community that cultivates a spirit of inquiry, fosters meaningful relationships, and encourages personal and spiritual development. We believe in the unique talents and gifts of each student and strive to create an environment where they can thrive academically, socially, and spiritually.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="apply.html">Apply Now</a></li>
+                                    <li><a href="Admission Process Overview.html">Admission Overview</a></li>
+                                    <li><a href="fees-structure.html">School Fees</a></li>      
+  
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">ADMISSIONS</h2>
+                                    <p class="mega-menu-description">
+                                        Join the Seeta Family! When you take part in on-campus tours, 
+                                        Venture for a Day experiences, and open houses, you will be able 
+                                        to discover what it means to be part of our extraordinary 
+                                        community and how we can assist you as you venture to become 
+                                        the very best version of yourself.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Academics
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="curriculum.html">Curriculum</a></li>
+                                    <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">ACADEMICS</h2>
+                                    <p class="mega-menu-description">
+                                        Experience excellence in education through our comprehensive 
+                                        academic programs. Our dedicated faculty and innovative curriculum 
+                                        are designed to challenge, inspire, and prepare you for success 
+                                        in your chosen field and beyond.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Student Life
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-content">
+                                <ul class="mega-menu-links">
+                                    <li><a href="sports&athletics.html">Sports & Athletics</a></li>
+                                    <li><a href="student-clubs.html">Clubs & Activities</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                                <div class="mega-menu-content-right">
+                                    <h2 class="mega-menu-title">STUDENT LIFE</h2>
+                                    <p class="mega-menu-description">
+                                      Experience vibrant student life at Seeta. Our diverse clubs, exciting events, and supportive community offer opportunities to connect with peers, pursue your passions, and create lasting memories.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="apply.html" class="btn btn-apply">APPLY NOW</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+    <div class="banner-container">
+        <img src="seeta/about us.jpg" alt="Faculty and staff collaborating" class="banner-image">
+        <div class="banner-overlay">
+        <h1 style="font-size: 100px; text-align: left;">CONTACT US</h1>
+    </div>
+  </div>
+  </section>  
+
+<!-- Main Content -->
+<div class="container my-5">
+    <!-- Campus Locations -->
+    <section class="mb-5">
+        <h2 class="text-center mb-4">Our Campus Locations</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card campus-card h-100">
+                    <img src="seeta/main campus.jpeg" class="card-img-top" alt="Main Campus">
+                    <div class="card-body">
+                        <h5 class="card-title">Main Campus</h5>
+                        <p class="card-text">Seeta, Mukono</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>0392 001786</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card campus-card h-100">
+                    <img src="seeta/Greencampus.jpg" class="card-img-top" alt="Green Campus">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Campus</h5>
+                        <p class="card-text">Kayunga-Bugerere Road</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>0312 515031</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card campus-card h-100">
+                    <img src="seeta/mbalala campus.jpeg" class="card-img-top" alt="Mbalala Campus">
+                    <div class="card-body">
+                        <h5 class="card-title">Mbalala Campus</h5>
+                        <p class="card-text">5km past Mukono town</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>0392 174870</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card campus-card h-100">
+                    <img src="seeta/Alevel campus.jpg" class="card-img-top" alt="A'Level Campus">
+                    <div class="card-body">
+                        <h5 class="card-title">A'Level Campus</h5>
+                        <p class="card-text">1km past Wantoni</p>
+                        <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i>Kampala-Jinja Highway</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="mb-4">Get in Touch</h3>
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select class="form-select" id="subject" required>
+                            <option value="">Choose...</option>
+                            <option>General Inquiry</option>
+                            <option>Admissions</option>
+                            <option>Campus Visit</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.740919411769!2d32.80057980870821!3d0.35689039963810365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dc676c600c775%3A0x1e1675aba13390c9!2sSeeta%20High%20School%20Mukono!5e0!3m2!1sen!2sug!4v1736913564562!5m2!1sen!2sug" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Updated Contact Information -->
+   <section class="row g-4">
+    <h2 class="text-center mb-4">Our Team</h2>
+    <div class="col-md-4">
+        <div class="contact-info-box text-center">
+            <div class="staff-image-container">
+                <img src="seeta/Nagawa.jpg" alt="Ms Nagawa Joan" class="staff-image">
+            </div>
+            <h4><i class="fas fa-user-tie me-2"></i>Administration</h4>
+            <p class="mb-2"><strong>Ms Nagawa Joan</strong></p>
+            <p class="text-muted mb-2">Human Resource Manager</p>
+            <p class="mb-2">Overseeing staff development and institutional growth</p>
+            <a href="mailto:shs@humanresource.ac.ug" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope me-2"></i>shs@humanresource.ac.ug
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="contact-info-box text-center">
+            <div class="staff-image-container">
+                <img src="seeta/principal.jpeg" alt="Mr. Katumbe Davis" class="staff-image">
+            </div>
+            <h4><i class="fas fa-graduation-cap me-2"></i>Admissions</h4>
+            <p class="mb-2"><strong>Mr. Katumbe Davis</strong></p>
+            <p class="text-muted mb-2">Director of Admissions</p>
+            <p class="mb-2">Guiding future students on their educational journey</p>
+            <a href="mailto:admissions@seetahighschool.ac.ug" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope me-2"></i>admissions@seetahighschool.ac.ug
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="contact-info-box text-center">
+            <div class="staff-image-container">
+                <img src="seeta/media.jpg" alt="Communications Department" class="staff-image">
+            </div>
+            <h4><i class="fas fa-bullhorn me-2"></i>Media Inquiries</h4>
+            <p class="mb-2"><strong>Communications Department</strong></p>
+            <p class="text-muted mb-2">Public Relations & Media</p>
+            <p class="mb-2">Keeping our community informed and connected</p>
+            <a href="mailto:communications@seetahighschool.ac.ug" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-envelope me-2"></i>communications@seetahighschool.ac.ug
+            </a>
+        </div>
+    </div>
+</section>
+</div>
+
+<!--Footer section  -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- School Info -->
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="seeta/Badge-removebg-preview.png" alt="School Logo" class="me-2" width="80">
+            <h5>SHS</h5>
+          </div>
+          <p>Seeta High School is committed to excellence in education, fostering academic achievement, personal growth, and character development in a supportive and innovative learning environment. We prioritize the holistic development of our students, encouraging creativity, critical thinking, and collaboration.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-3">
+          <h5>Contact Information</h5>
+          <div class="divider"></div>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i> P.O BOX 417, Mukono, Uganda<br>
+            <i class="bi bi-telephone-fill"></i> Main: 0392 001786<br>
+            <i class="bi bi-telephone-fill"></i> Mukono: 0392 174870<br>
+            <i class="bi bi-telephone-fill"></i> Green: 0312 515031<br>
+            <i class="bi bi-envelope-fill"></i> info@seetahighschool.ac.ug
+          </p>
+          <h5 class="mt-3">Accredited By</h5>
+          <img src="seeta/education ministry.png" alt="Accreditation Logo" class="accredited">
+          <p>Ministry of Education and Sports</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5>Quick Links</h5>
+          <div class="divider"></div>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none ">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About SHS</a></li>
+            <li><a href="apply.html" class="text-white text-decoration-none">Apply Now</a></li>
+            <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+            <li><a href="contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Latest News -->
+        <div class="col-md-3">
+          <h5>Latest News</h5>
+          <div class="divider"></div>
+          <div class="news-item">
+            <div class="news-image">
+              <img src="seeta/swimming team.jpeg" alt="News Image">
+            </div>
+            <p class="news-date">15 MAR</p>
+            <p class="news-title">School Sports Day</p>
+            <p>Annual sports day scheduled for next month.</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2024 Seeta High School. All rights reserved.
+      </div>
+    </div>
+  </footer>  
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+// Form validation
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    if (!this.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+    } else {
+        // Show success message
+        event.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+    }
+    this.classList.add('was-validated');
+});
+
+// Campus card hover animation
+document.querySelectorAll('.campus-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+    });
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
+</script>
+<script>
+    // Add this JavaScript to handle the hover behavior
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth < 992) {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        // Prevent the default Bootstrap collapse behavior on hover
+        navbarToggler.addEventListener('mouseenter', function(e) {
+            e.preventDefault();
+            navbarCollapse.classList.add('show');
+        });
+
+        // Optional: Close menu when mouse leaves the entire navbar area
+        document.querySelector('.navbar').addEventListener('mouseleave', function() {
+            if (window.innerWidth < 992) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    }
+});
+  </script>
+</body>
+</html>
